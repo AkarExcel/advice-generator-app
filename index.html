@@ -27,7 +27,6 @@
       // This is the JSON from our response
       const adviceId = document.getElementById("adviceId");
       const advice = document.getElementById("advice");
-console.log(data)
       adviceId.innerHTML = data.slip.id
       advice.innerHTML = data.slip.advice
 
@@ -45,7 +44,7 @@ console.log(data)
 </head>
 <body class="flex-col justify-between">
  
-    <div class="flex flex-col items-center justify-center mt-40">
+    <div class="flex flex-col items-center justify-center mt-60 lg:mt-40">
       <div class="flex flex-col items-center space-y-4 lg:space-y-6 w-80 p-10 rounded-2xl grayish-blue md:w-80 text-center min-h-fit">
         <h2 class="neon-green-color uppercase text-xs">Advice #<span class="neon-green-color" id="adviceId"></span></h2>
         <p class="font-bold text-2xl lg:text-xl light-cyan-color" id="advice">this is an advice</p>
@@ -55,7 +54,7 @@ console.log(data)
       </div>
       <div class="dice-hover relative p-0 m-0">
         <div class="absolute rounded-full w-10 dice flex items-center p-3">
-          <img class="" src="/images/icon-dice.svg" alt="" srcset="">
+          <img class="" src="images/icon-dice.svg" alt="" srcset="">
         </div>
       </div>
     </div>
